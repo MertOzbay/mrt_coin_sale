@@ -1,5 +1,5 @@
 const MrtCoin = artifacts.require("MrtCoin");
 
 module.exports = function (deployer) {
-  deployer.deploy(MrtCoin);
+  deployer.deploy(MrtCoin, 1000000000);
 };

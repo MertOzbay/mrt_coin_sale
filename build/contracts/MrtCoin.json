@@ -2,7 +2,13 @@
   "contractName": "MrtCoin",
   "abi": [
     {
-      "inputs": [],
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_initialSupply",
+          "type": "uint256"
+        }
+      ],
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "constructor"
@@ -23,25 +29,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/mertozbay/Desktop/mrt_coin/contracts/MrtCoin.sol\":\"MrtCoin\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/mertozbay/Desktop/mrt_coin/contracts/MrtCoin.sol\":{\"keccak256\":\"0xd8e3325b5f3a72453a52e0934b8bd635e8b4bbbf3dca04f70f000db9da17e42f\",\"urls\":[\"bzz-raw://8a3110056fba737e0fd92f0d5ce01e99bfcb838f374abf4069a9f6796b80befb\",\"dweb:/ipfs/Qmbw9eMdgeRob5u7PuTPCUNH7KSTGMrTqNAgsht9GQTnca\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50633b9aca006000819055506084806100296000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a72315820f75db842c8d6700831112fa9e3bed9b5e4b76009cfad378528add1fb8d81351864736f6c63430005100032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a72315820f75db842c8d6700831112fa9e3bed9b5e4b76009cfad378528add1fb8d81351864736f6c63430005100032",
-  "sourceMap": "26:112:1:-;;;78:57;8:9:-1;5:2;;;30:1;27;20:12;5:2;78:57:1;120:10;106:11;:24;;;;26:112;;;;;;",
-  "deployedSourceMap": "26:112:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:112:1;;;;;;;;;;;;;;;;;;;47:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity >=0.4.2;\n\ncontract MrtCoin{\n\n  uint256 public totalSupply;\n\n  constructor () public {\n    totalSupply = 1000000000;\n  }\n\n}\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_initialSupply\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/mertozbay/Desktop/mrt_coin/contracts/MrtCoin.sol\":\"MrtCoin\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/mertozbay/Desktop/mrt_coin/contracts/MrtCoin.sol\":{\"keccak256\":\"0x7e9960313d18b925e6665786c9d4631be019ef5edfdfa90ee4f1e40d86ef7f86\",\"urls\":[\"bzz-raw://15647ff80e75c9198a2e3bb892de0840290c779e40a4886188514a9923e0f059\",\"dweb:/ipfs/QmcXBYvhazNDAj8H25Z4GThRNgZm9BCdxT9pwsW7j3CT2F\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516100de3803806100de8339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000819055505060848061005a6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a723158209f863c37737e00a156c7120acb749f7fdef532a66e18a7acda1b446ca83f62bd64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a723158209f863c37737e00a156c7120acb749f7fdef532a66e18a7acda1b446ca83f62bd64736f6c63430005100032",
+  "sourceMap": "26:138:0:-;;;78:83;8:9:-1;5:2;;;30:1;27;20:12;5:2;78:83:0;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;78:83:0;;;;;;;;;;;;;;;;142:14;128:11;:28;;;;78:83;26:138;;;;;;",
+  "deployedSourceMap": "26:138:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:138:0;;;;;;;;;;;;;;;;;;;47:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.2;\n\ncontract MrtCoin{\n\n  uint256 public totalSupply;\n\n  constructor (uint256 _initialSupply) public {\n    totalSupply = _initialSupply;\n  }\n\n}\n",
   "sourcePath": "/Users/mertozbay/Desktop/mrt_coin/contracts/MrtCoin.sol",
   "ast": {
     "absolutePath": "/Users/mertozbay/Desktop/mrt_coin/contracts/MrtCoin.sol",
     "exportedSymbols": {
       "MrtCoin": [
-        45
+        14
       ]
     },
-    "id": 46,
+    "id": 15,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 34,
+        "id": 1,
         "literals": [
           "solidity",
           ">=",
@@ -49,7 +55,7 @@
           ".2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:0"
       },
       {
         "baseContracts": [],
@@ -57,20 +63,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 45,
+        "id": 14,
         "linearizedBaseContracts": [
-          45
+          14
         ],
         "name": "MrtCoin",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 36,
+            "id": 3,
             "name": "totalSupply",
             "nodeType": "VariableDeclaration",
-            "scope": 45,
-            "src": "47:26:1",
+            "scope": 14,
+            "src": "47:26:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -78,10 +84,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 35,
+              "id": 2,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "47:7:1",
+              "src": "47:7:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -92,26 +98,26 @@
           },
           {
             "body": {
-              "id": 43,
+              "id": 12,
               "nodeType": "Block",
-              "src": "100:35:1",
+              "src": "122:39:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 41,
+                    "id": 10,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 39,
+                      "id": 8,
                       "name": "totalSupply",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 36,
-                      "src": "106:11:1",
+                      "referencedDeclaration": 3,
+                      "src": "128:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -121,72 +127,94 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "hexValue": "31303030303030303030",
-                      "id": 40,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "number",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "120:10:1",
-                      "subdenomination": null,
+                      "id": 9,
+                      "name": "_initialSupply",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5,
+                      "src": "142:14:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1000000000_by_1",
-                        "typeString": "int_const 1000000000"
-                      },
-                      "value": "1000000000"
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
                     },
-                    "src": "106:24:1",
+                    "src": "128:28:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 42,
+                  "id": 11,
                   "nodeType": "ExpressionStatement",
-                  "src": "106:24:1"
+                  "src": "128:28:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 44,
+            "id": 13,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 37,
+              "id": 6,
               "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "90:2:1"
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5,
+                  "name": "_initialSupply",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13,
+                  "src": "91:22:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "91:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "90:24:0"
             },
             "returnParameters": {
-              "id": 38,
+              "id": 7,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "100:0:1"
+              "src": "122:0:0"
             },
-            "scope": 45,
-            "src": "78:57:1",
+            "scope": 14,
+            "src": "78:83:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 46,
-        "src": "26:112:1"
+        "scope": 15,
+        "src": "26:138:0"
       }
     ],
-    "src": "0:139:1"
+    "src": "0:165:0"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "/Users/mertozbay/Desktop/mrt_coin/contracts/MrtCoin.sol",
       "exportedSymbols": {
         "MrtCoin": [
-          45
+          14
         ]
       }
     },
@@ -200,9 +228,9 @@
             ".2"
           ]
         },
-        "id": 34,
+        "id": 1,
         "name": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:0"
       },
       {
         "attributes": {
@@ -216,17 +244,17 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            45
+            14
           ],
           "name": "MrtCoin",
-          "scope": 46
+          "scope": 15
         },
         "children": [
           {
             "attributes": {
               "constant": false,
               "name": "totalSupply",
-              "scope": 45,
+              "scope": 14,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -239,14 +267,14 @@
                   "name": "uint256",
                   "type": "uint256"
                 },
-                "id": 35,
+                "id": 2,
                 "name": "ElementaryTypeName",
-                "src": "47:7:1"
+                "src": "47:7:0"
               }
             ],
-            "id": 36,
+            "id": 3,
             "name": "VariableDeclaration",
-            "src": "47:26:1"
+            "src": "47:26:0"
           },
           {
             "attributes": {
@@ -258,22 +286,44 @@
                 null
               ],
               "name": "",
-              "scope": 45,
+              "scope": 14,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
             },
             "children": [
               {
-                "attributes": {
-                  "parameters": [
-                    null
-                  ]
-                },
-                "children": [],
-                "id": 37,
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_initialSupply",
+                      "scope": 13,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 4,
+                        "name": "ElementaryTypeName",
+                        "src": "91:7:0"
+                      }
+                    ],
+                    "id": 5,
+                    "name": "VariableDeclaration",
+                    "src": "91:22:0"
+                  }
+                ],
+                "id": 6,
                 "name": "ParameterList",
-                "src": "90:2:1"
+                "src": "90:24:0"
               },
               {
                 "attributes": {
@@ -282,9 +332,9 @@
                   ]
                 },
                 "children": [],
-                "id": 38,
+                "id": 7,
                 "name": "ParameterList",
-                "src": "100:0:1"
+                "src": "122:0:0"
               },
               {
                 "children": [
@@ -307,60 +357,57 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 36,
+                              "referencedDeclaration": 3,
                               "type": "uint256",
                               "value": "totalSupply"
                             },
-                            "id": 39,
+                            "id": 8,
                             "name": "Identifier",
-                            "src": "106:11:1"
+                            "src": "128:11:0"
                           },
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "hexvalue": "31303030303030303030",
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "lValueRequested": false,
-                              "subdenomination": null,
-                              "token": "number",
-                              "type": "int_const 1000000000",
-                              "value": "1000000000"
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 5,
+                              "type": "uint256",
+                              "value": "_initialSupply"
                             },
-                            "id": 40,
-                            "name": "Literal",
-                            "src": "120:10:1"
+                            "id": 9,
+                            "name": "Identifier",
+                            "src": "142:14:0"
                           }
                         ],
-                        "id": 41,
+                        "id": 10,
                         "name": "Assignment",
-                        "src": "106:24:1"
+                        "src": "128:28:0"
                       }
                     ],
-                    "id": 42,
+                    "id": 11,
                     "name": "ExpressionStatement",
-                    "src": "106:24:1"
+                    "src": "128:28:0"
                   }
                 ],
-                "id": 43,
+                "id": 12,
                 "name": "Block",
-                "src": "100:35:1"
+                "src": "122:39:0"
               }
             ],
-            "id": 44,
+            "id": 13,
             "name": "FunctionDefinition",
-            "src": "78:57:1"
+            "src": "78:83:0"
           }
         ],
-        "id": 45,
+        "id": 14,
         "name": "ContractDefinition",
-        "src": "26:112:1"
+        "src": "26:138:0"
       }
     ],
-    "id": 46,
+    "id": 15,
     "name": "SourceUnit",
-    "src": "0:139:1"
+    "src": "0:165:0"
   },
   "compiler": {
     "name": "solc",
@@ -375,8 +422,7 @@
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-06-17T14:33:01.167Z",
-  "networkType": "ethereum",
+  "updatedAt": "2021-06-22T09:06:23.248Z",
   "devdoc": {
     "methods": {}
   },
