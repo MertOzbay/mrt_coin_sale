@@ -21,7 +21,7 @@ App = {
     } else {
       // Specify default instance if no web3 instance provided
       console.log("Web3 instance NOT provided");
-      App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
+      App.web3Provider = new Web3.providers.HttpProvider('http://localhost:8545');
       web3 = new Web3(App.web3Provider);
     }
     return App.initContracts();
